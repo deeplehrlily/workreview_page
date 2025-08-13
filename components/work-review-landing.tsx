@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { motion } from "framer-motion"
+// import { motion } from "framer-motion"
 
 const GiftIcon = () => (
   <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -119,82 +119,40 @@ export default function WorkReviewLanding() {
     <div className="relative flex flex-col items-center justify-center w-full min-h-screen overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-[#E8F8FF] via-[#F0FBFF] to-[#E0F4FF] z-0"></div>
 
-      <div className="absolute top-10 left-10 w-4 h-4 bg-[#5BDEF0]/30 rounded-full animate-pulse"></div>
-      <div className="absolute top-20 right-20 w-6 h-6 bg-[#5BDEF0]/20 rounded-full animate-bounce"></div>
-      <div className="absolute bottom-32 left-16 w-3 h-3 bg-[#5BDEF0]/40 rounded-full animate-pulse"></div>
-      <div className="absolute bottom-20 right-32 w-5 h-5 bg-[#5BDEF0]/25 rounded-full animate-bounce"></div>
-      <div className="absolute top-1/3 left-8 w-2 h-2 bg-[#5BDEF0]/35 rounded-full animate-pulse"></div>
-      <div className="absolute top-2/3 right-12 w-4 h-4 bg-[#5BDEF0]/30 rounded-full animate-bounce"></div>
-      <div className="absolute top-1/4 right-1/4 w-3 h-3 bg-white/50 rounded-full animate-pulse"></div>
-      <div className="absolute bottom-1/3 left-1/3 w-2 h-2 bg-white/40 rounded-full animate-bounce"></div>
-      <div className="absolute top-1/2 left-1/4 w-3 h-3 bg-[#5BDEF0]/25 rounded-full animate-pulse"></div>
-      <div className="absolute top-3/4 right-1/3 w-4 h-4 bg-white/30 rounded-full animate-bounce"></div>
+      <div className="absolute top-10 left-10 w-4 h-4 bg-[#5BDEF0]/30 rounded-full"></div>
+      <div className="absolute top-20 right-20 w-6 h-6 bg-[#5BDEF0]/20 rounded-full"></div>
+      <div className="absolute bottom-32 left-16 w-3 h-3 bg-[#5BDEF0]/40 rounded-full"></div>
+      <div className="absolute bottom-20 right-32 w-5 h-5 bg-[#5BDEF0]/25 rounded-full"></div>
+      <div className="absolute top-1/3 left-8 w-2 h-2 bg-[#5BDEF0]/35 rounded-full"></div>
+      <div className="absolute top-2/3 right-12 w-4 h-4 bg-[#5BDEF0]/30 rounded-full"></div>
+      <div className="absolute top-1/4 right-1/4 w-3 h-3 bg-white/50 rounded-full"></div>
+      <div className="absolute bottom-1/3 left-1/3 w-2 h-2 bg-white/40 rounded-full"></div>
+      <div className="absolute top-1/2 left-1/4 w-3 h-3 bg-[#5BDEF0]/25 rounded-full"></div>
+      <div className="absolute top-3/4 right-1/3 w-4 h-4 bg-white/30 rounded-full"></div>
 
       {/* Content container */}
       <div className="relative z-10 flex flex-col items-center justify-center w-full max-w-md md:max-w-lg px-6 py-12">
-        <div className="relative w-full h-48 md:h-56 mb-6">
+        <div className="relative w-full h-56 md:h-64 mb-8">
           {/* Left gift icon */}
-          <motion.div
-            className="absolute left-8 top-8"
-            initial={{ y: -10 }}
-            animate={{ y: 10 }}
-            transition={{
-              duration: 3,
-              repeat: Number.POSITIVE_INFINITY,
-              repeatType: "reverse",
-              ease: "easeInOut",
-            }}
-          >
+          <div className="absolute left-4 top-6">
             <div className="w-20 h-20 md:w-24 md:h-24 bg-white rounded-[2rem] shadow-[0_15px_35px_rgba(91,222,240,0.25)] flex items-center justify-center backdrop-blur-sm">
               <GiftIcon />
             </div>
-          </motion.div>
+          </div>
 
           {/* Right star icon */}
-          <motion.div
-            className="absolute right-8 top-8"
-            initial={{ y: 10 }}
-            animate={{ y: -10 }}
-            transition={{
-              duration: 3,
-              repeat: Number.POSITIVE_INFINITY,
-              repeatType: "reverse",
-              ease: "easeInOut",
-            }}
-          >
+          <div className="absolute right-4 top-6">
             <div className="w-20 h-20 md:w-24 md:h-24 bg-white rounded-[2rem] shadow-[0_15px_35px_rgba(91,222,240,0.25)] flex items-center justify-center backdrop-blur-sm">
               <StarIcon />
             </div>
-          </motion.div>
+          </div>
 
-          {/* Center main icon with enhanced sparkle animation */}
-          <motion.div
-            className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
-            initial={{ scale: 0, rotate: 0 }}
-            animate={{ scale: 1, rotate: 360 }}
-            transition={{
-              duration: 1.5,
-              ease: "easeOut",
-            }}
-          >
-            <motion.div
-              animate={{
-                boxShadow: [
-                  "0_20px_40px_rgba(91,222,240,0.3)",
-                  "0_25px_50px_rgba(91,222,240,0.5)",
-                  "0_20px_40px_rgba(91,222,240,0.3)",
-                ],
-              }}
-              transition={{
-                duration: 2,
-                repeat: Number.POSITIVE_INFINITY,
-                ease: "easeInOut",
-              }}
-              className="w-28 h-28 md:w-32 md:h-32 bg-gradient-to-br from-[#5BDEF0] to-[#4AC8E0] rounded-full flex items-center justify-center"
-            >
+          {/* Center main icon */}
+          <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <div className="w-28 h-28 md:w-32 md:h-32 bg-gradient-to-br from-[#5BDEF0] to-[#4AC8E0] rounded-full flex items-center justify-center shadow-[0_20px_40px_rgba(91,222,240,0.3)]">
               <CenterSparkleIcon />
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </div>
 
         <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#5BDEF0]/20 to-[#4AC8E0]/20 text-[#5BDEF0] px-4 py-2 rounded-full text-sm font-bold mb-6 border border-[#5BDEF0]/30">
@@ -219,16 +177,14 @@ export default function WorkReviewLanding() {
         </div>
 
         <div className="w-full flex justify-center mb-8">
-          <motion.a
+          <a
             href="https://dainty-souffle-dc54ef.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 md:px-12 py-3 md:py-4 bg-gradient-to-r from-[#5BDEF0] to-[#4AC8E0] text-white font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-sm md:text-base"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
           >
             리뷰 작성하러가기
-          </motion.a>
+          </a>
         </div>
 
         <div className="flex flex-wrap justify-center items-center gap-4 text-gray-600 text-xs md:text-sm">
