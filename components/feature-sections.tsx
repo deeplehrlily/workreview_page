@@ -185,7 +185,7 @@ export default function FeatureSections() {
               내가 앞으로 일 할 곳 리뷰 보기
             </div>
             <h3 className="text-2xl md:text-3xl font-black text-slate-800 mb-4">
-              걸으로 보이는 정보만으로
+              걸로 보이는 정보만으로
               <br />
               모든 부족하니까
             </h3>
@@ -230,7 +230,7 @@ export default function FeatureSections() {
             </div>
             <h3 className="text-2xl md:text-3xl font-black text-slate-800 mb-4">멀리 갈 필요 없잖아요?</h3>
             <p className="text-slate-600 text-lg leading-relaxed">
-              집 근처에 숨은 좋은 직장, 아직 쉽게 찾<br />을 수 있어요.
+              집 근처에 숨은 좋은 직장, 이제 쉽게 찾<br />을 수 있어요.
               <br />
               리뷰를 보고 나에게 맞는 일터를 골라
               <br />
