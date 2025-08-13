@@ -56,6 +56,12 @@ export default function FAQSection() {
       answer:
         "리뷰를 적어주신만큼 룰렛을 돌려 제공해드리며 작성 후 영업일 기준 3-4일안에 승인여부와 함께 룰렛을 돌릴 수 있는 링크를 전달드립니다.",
     },
+    {
+      id: 10,
+      question: "어떤 사업장까지 작성할 수 있나요?",
+      answer:
+        "편의점, 미용실, 공장, 센터, 학원, 병원, 회사, 식당, 카페, 교회 등등 일할 수 있는 모든 곳이면 가능합니다!",
+    },
   ]
 
   const [expandedItems, setExpandedItems] = useState<number[]>([])
