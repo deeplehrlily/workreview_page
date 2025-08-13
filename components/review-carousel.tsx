@@ -16,7 +16,7 @@ export default function ReviewCarousel({ autoRotateInterval = 15, showNavigation
       content:
         "월급이 진짜 박함... 거의 알바 수준이었고, 스케줄 조율도 잘 안 돼요. 스탭이 적어서 쉬는 날에도 연락 오기도 함. 기술 배우는 건 좋아도 복지 바라면 실망할 수 있어요.",
       tipTitle: "취업 Tip",
-      tipContent: "먼저 본인 캐주얼한지 간지 맞는지 확인사 되게 따지",
+      tipContent: "면접 복장 캐주얼하게 가지 마세요. 첫인상 되게 따짐…",
     },
     {
       id: 2,
