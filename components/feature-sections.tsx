@@ -185,9 +185,9 @@ export default function FeatureSections() {
               내가 앞으로 일 할 곳 리뷰 보기
             </div>
             <h3 className="text-2xl md:text-3xl font-black text-slate-800 mb-4">
-              걸로 보이는 정보만으로
+              겉으로 보이는 정보만으로는
               <br />
-              모든 부족하니까
+              부족하니까
             </h3>
             <p className="text-slate-600 text-lg leading-relaxed">
               지원 전, 실제 근무자의 리뷰를 확인
